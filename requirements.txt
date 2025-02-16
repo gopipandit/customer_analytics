@@ -2,3 +2,4 @@ streamlit
 confluent_kafka
 pyspark
 pymongo
+plotly
