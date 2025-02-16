@@ -26,6 +26,8 @@ producer = Producer(conf)
 # Topic to produce messages to
 topic = os.getenv("topic")
 
+
+
 # Page configuration
 st.set_page_config(
     page_title="My E-Commerce Store",
