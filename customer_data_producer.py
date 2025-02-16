@@ -30,7 +30,7 @@ topic = os.getenv("topic")
 
 # Page configuration
 st.set_page_config(
-    page_title="My E-Commerce Store",
+    page_title="amber.com",
     page_icon="🎁",
     layout="wide"
 )
@@ -66,7 +66,7 @@ st.markdown("""
 # Product data with valid names
 products = [
     # Books
-    {"id": i, "name": name, "price": price, "image": f"https://via.placeholder.com/150?text={name.replace(' ', '+')}", "description": desc, "category": "Books"}
+    {"id": i, "name": name, "price": price, "image": "atomic_habits.jpg", "description": desc, "category": "Books"}
     for i, (name, price, desc) in enumerate([
         ("Atomic Habits", 15.99, "Transform your habits and change your life."),
         ("The Power of Now", 13.99, "A guide to spiritual enlightenment."),
@@ -142,6 +142,7 @@ def log_activity(event_type, product):
         "product_id": product["id"],
         "product_name": product["name"],
         "category": product["category"],
+        "price": product["price"],
         "timestamp": datetime.utcnow().isoformat()
     }
     try:
@@ -265,4 +266,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.markdown("© 2023 My E-Commerce Store. All rights reserved.")
+st.markdown("© 2025 Shoppy Mania Pvt Ltd. All rights reserved.")
